@@ -71,9 +71,13 @@ def normalize(image):
     return normal
 
 def sigmoid_normalize(image, variance):
+    rows = len(image)
+    columns = len(image[0])
     import math
     pPrime = []
+    testValue = 0
     single = np.ravel(image)
     for i in range(0, len(single)):
-        pPrime.append(255(1 + float(single[i]) ** (-1)))
-    return pPrime
+        testValue = single[i]
+        pPrime.append(255 * (1 + (math.e ** (-variance ** (-1) * (testValue - 128)))) ** (-1))
+    return np.reshape(pPrime, (rows, columns))

@@ -5,4 +5,4 @@ import numpy as np
 #print(single_type_candy_count("pokedex.json"))
 #print(reflections_and_projections([[0, 1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 6]]))
 #print(normalize([[0,1],[2,3]]))
-print(sigmoid_normalize([[1,1],[2,3]], 1))
+print(sigmoid_normalize([[1,150],[2,3]], 1))
